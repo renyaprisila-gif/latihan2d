@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: peachpuff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px; 
+}
+.container {
+    background-color: burlywood;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: greenyellow; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: green;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p  {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+.identitas {
+    width: 100%;
+}
+ .kolom-foto {
+        vertical-align: top;
+        padding-right: 30px;
+}
+ .kolom-identitas {
+          vertical-align: top;            
+}
+ ..foto-profil {
+    width: 210px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #00509e;
+    padding: 5px;
+    display: block;
+}
+
+ }
+  .data-identitas td {
+           padding: 5px;
+ }
+ /*============================================================================*/
+ /*LIST*/
+ /*============================================================================*/
+ ul,
+ ol {
+            line-height: 1.8;
+ }
+  .tabel-matakuliah {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 15px;
+          margin-bottom: 20px;
+  }
+   /*=======================================================================*/
+   /*TABEL MATA KULIAH*/
+   /*=======================================================================*/
+   }
+    .tabel-matakuliah th {
+            background-color: #00509e;
+            color: skyblue;
+            padding: 10px;
+            border: 1px solid #cccccc;
+    }
+     .tabel-matakuliah td {
+            padding: 10px;
+            border: 1px solid #ccccccc;
+     }
+     /*================link==================================================*/
+     a {
+           color: #0066cc;
+           text-decoration: none;
+
+     }
+     a:hover {
+              color: blue;
+              text-decoration: underline;
+     }
+      /*==================================================================*/
+      /*Form*/
+      /*==================================================================*/
+      form {
+             beckground-color:  f1f5f9;
+             padding: 20px;
+             margin-top: 20px;
+             border: 1px solid #cccccc;          
+      }
+      /* Label Form */
+      label {
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+      }
+      /* Input, Select dan Textare */
+      input,
+      select,
+      textarea {
+               width: 100%;
+               padding: 10px;
+               border: 1px solid #cccccc;
+               box-sizing: border-box;
+      }
+      textarea {
+                 resize: vertical;
+      }
+      /*
+      =========================BUTTON=====================================*/
+      button {
+              background-color: #00509e;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              margin-right: 10px;
+              cursor: pointer;
+     }
+     button :hover {
+             background-color: #003366;
+     }
+     /*======================FOOTER===================================*/
+      .footer {
+               text-align: center;
+               color: ;
+               margin-top: 30px;
+      }
+       .grid-informasi {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+              margin-top: 25px;
+              margin-bottom: 25px;
+       }
+       .card {
+           background-color: pink;
+           padding: 20px;
+           border: 1px solid #dddddd;
+       }
+       @media (max-width: 768px){
+           /* CONTAINER */
+           .container {
+                width: 94%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            /* HEADING */
+            h1 {font-size: 24px}
+            h2 {font-size: 19px}
+            p {font-size:14px;line-height: 1.6; }
+
+            /* FOTO DAN IDENTITAS */
+            .identitas > tbody > tr {
+                display: flex;
+                flex-direction: column;
+            }
+            .kolom-foto{
+                width: 100px;
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .kolom-identitas {
+                width: 100%;
+                padding-right: 0;
+            }
+            .kolom-identitas h2 {
+                margin-top: 0;
+                text-align: center;
+            }
+            .foto-profil {
+                width: 130px;
+            }
+            /* DATA IDENTITAS */
+            .data-identitas td {
+                padding: 4px 2px;
+                font-size: 13px;
+                vertical-align: top;
+            }
+            /* GRID INFORMASI */
+            .grid-informasi {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .card {
+                width: 100%;
+                padding: 15px;
+            }
+            .tabel-matakuliah {font-size: 12px}
+            form {padding: 15px; }
+
+            input,
+            select,
+            textarea {font-size: 14px}
+
+            button {
+                width: 100px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
